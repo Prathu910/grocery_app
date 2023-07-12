@@ -1,0 +1,82 @@
+@import "../../css_config/mixins.scss";
+
+.main {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  .categories {
+    width: 30%;
+    padding: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 20px;
+    .title {
+      padding-left: 10px;
+      font-size: 0.8rem;
+    }
+    .categories-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .category {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        svg {
+          margin-left: auto;
+        }
+        border-bottom: 1px dotted grey;
+      }
+    }
+  }
+  .products-listing {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .product {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid rgba(128, 128, 128, 0.3);
+      padding: 10px;
+      border-radius: 10px;
+      img {
+        width: 70%;
+      }
+      .pricing {
+        .disc-price {
+          color: #0da487;
+          font-size: 1.3rem;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  border: none;
+  padding: 10px 25px;
+  background-color: #0da487;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.location-img {
+  width: 100vw;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  img {
+    width: 100%;
+  }
+}

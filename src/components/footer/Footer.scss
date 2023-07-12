@@ -1,0 +1,31 @@
+@import "../../css_config/mixins.scss";
+
+.footer-content {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-title {
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.f-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.logo-f {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  img {
+    width: 25px;
+  }
+}

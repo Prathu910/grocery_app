@@ -1,0 +1,118 @@
+@import "../../css_config/mixins.scss";
+
+.checkout-page {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  .order-details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .address {
+      border: 1px solid rgb(128, 128, 128, 0.3);
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .title {
+        margin-bottom: 20px;
+        font-size: 0.8rem;
+      }
+      .user-card {
+        display: flex;
+        gap: 10px;
+        .name {
+          font-weight: bold;
+        }
+        .user {
+          display: flex;
+          gap: 5px;
+          border: 1px solid rgb(128, 128, 128, 0.3);
+          padding: 10px;
+          border-radius: 20px;
+          .user-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          }
+        }
+      }
+      .new-add-btn {
+        margin-top: 20px;
+      }
+    }
+    .payment {
+      height: 300px;
+      border: 1px solid rgb(128, 128, 128, 0.3);
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .title {
+        font-size: 0.8rem;
+      }
+      .methods {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        .method {
+          cursor: pointer;
+          display: flex;
+          gap: 20px;
+          border: 1px solid rgb(128, 128, 128, 0.3);
+          padding: 20px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  .place-order {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgb(128, 128, 128, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    .title {
+      font-size: 0.8rem;
+    }
+    .products {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .product {
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 50px;
+        }
+      }
+    }
+    .bill {
+      display: flex;
+      justify-content: space-between;
+      .cat-bill {
+        font-weight: bold;
+      }
+    }
+    .total {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+
+    .place-0rder-btn {
+      margin-top: 30px;
+      cursor: pointer;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
