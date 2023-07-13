@@ -26,11 +26,13 @@ const Cart = () => {
             </div>
           </div>
           <p className="price">$ 4.50</p>
-          <button className="counter">
-            <span>-</span>
-            <span>2</span>
-            <span>+</span>
-          </button>
+          <div className="counter-div">
+            <button className="counter">
+              <span>-</span>
+              <span>2</span>
+              <span>+</span>
+            </button>
+          </div>
           <p className="total">$ 9.50</p>
           <p className="remove">
             <BsTrash />
@@ -45,11 +47,13 @@ const Cart = () => {
             </div>
           </div>
           <p className="price">$ 4.50</p>
-          <button className="counter">
-            <span>-</span>
-            <span>2</span>
-            <span>+</span>
-          </button>
+          <div className="counter-div">
+            <button className="counter">
+              <span>-</span>
+              <span>2</span>
+              <span>+</span>
+            </button>
+          </div>
           <p className="total">$ 9.50</p>
           <p className="remove">
             <BsTrash />
@@ -64,11 +68,13 @@ const Cart = () => {
             </div>
           </div>
           <p className="price">$ 4.50</p>
-          <button className="counter">
-            <span>-</span>
-            <span>2</span>
-            <span>+</span>
-          </button>
+          <div className="counter-div">
+            <button className="counter">
+              <span>-</span>
+              <span>2</span>
+              <span>+</span>
+            </button>
+          </div>
           <p className="total">$ 9.50</p>
           <p className="remove">
             <BsTrash />

@@ -3,7 +3,6 @@
 .header-content {
   height: 60px;
   display: flex;
-  gap: 20px;
   justify-content: space-between;
   align-items: center;
   .logo,
@@ -13,21 +12,43 @@
     gap: 10px;
     align-items: center;
   }
+  .logo {
+    width: 25px;
+    img {
+      width: 100%;
+    }
+    h1 {
+      font-size: 1rem;
+      @include md {
+        font-size: 1.2rem;
+      }
+    }
+    @include md {
+      width: 75px;
+    }
+  }
   .nav-links {
     list-style-type: none;
     font-size: 1rem;
+    display: none;
+    @include md {
+      display: flex;
+    }
   }
   .right-section {
     display: flex;
     align-items: center;
     gap: 5px;
     .search-box {
-      width: 250px;
+      width: 100px;
       background-color: white;
       border-radius: 10px;
       padding-left: 8px;
       display: flex;
       align-items: center;
+      @include md {
+        width: 250px;
+      }
       input {
         width: 90%;
         height: 30px;

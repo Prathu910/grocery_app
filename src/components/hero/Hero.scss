@@ -4,11 +4,17 @@
   width: 100%;
   height: 430px;
   display: flex;
+  flex-direction: column;
   gap: 10px;
+  @include md {
+    flex-direction: row;
+  }
   .left-img {
-    width: 70%;
+    width: 100%;
     height: 100%;
-    padding-left: 80px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 30px;
     background: no-repeat center center;
     -webkit-background-size: cover;
@@ -16,32 +22,47 @@
     -o-background-size: cover;
     background-size: cover;
     background-image: url("../../assets/Rectangle-1.png");
+    @include md {
+      width: 70%;
+      padding-left: 80px;
+    }
     h1 {
-      max-width: 50%;
-      font-size: 2.7rem;
+      max-width: 80%;
+      font-size: 2rem;
       span {
         color: #8cc32f;
+      }
+      @include md {
+        font-size: 2.7rem;
+        max-width: 50%;
       }
     }
     .shop {
       button {
-        padding: 10px 30px;
+        padding: 8px 20px;
         color: white;
         border: none;
         border-radius: 10px;
         background-color: #282d26;
         cursor: pointer;
+        @include md {
+          padding: 10px 30px;
+        }
       }
     }
   }
   .right-img {
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    @include md {
+      flex-direction: column;
+    }
     .top-img {
-      padding-left: 30px;
-      height: 50%;
+      padding-left: 20px;
+      height: 100%;
+      // width: 50%;
       border-radius: 30px;
       background: no-repeat center center;
       -webkit-background-size: cover;
@@ -49,18 +70,26 @@
       -o-background-size: cover;
       background-size: cover;
       background-image: url("../../assets/Rectangle-2.png");
+      @include md {
+        height: 50%;
+        padding-left: 30px;
+      }
       h1 {
-        max-width: 60%;
-        font-size: 2rem;
+        max-width: 80%;
+        font-size: 1rem;
         span {
           color: #8cc32f;
+        }
+        @include md {
+          max-width: 60%;
+          font-size: 2rem;
         }
       }
     }
     .bottom-img {
-      padding-left: 30px;
+      padding-left: 20px;
       color: whitesmoke;
-      height: 50%;
+      height: 100%;
       border-radius: 30px;
       background: no-repeat center center;
       -webkit-background-size: cover;
@@ -68,11 +97,19 @@
       -o-background-size: cover;
       background-size: cover;
       background-image: url("../../assets/Rectangle-3.png");
+      @include md {
+        height: 50%;
+        padding-left: 30px;
+      }
       h1 {
-        max-width: 60%;
-        font-size: 2rem;
+        max-width: 80%;
+        font-size: 1rem;
         span {
           color: #8cc32f;
+        }
+        @include md {
+          max-width: 60%;
+          font-size: 2rem;
         }
       }
     }
@@ -83,5 +120,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
+  @include md {
+    gap: 20px;
+  }
 }

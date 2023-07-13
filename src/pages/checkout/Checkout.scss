@@ -1,14 +1,22 @@
 @import "../../css_config/mixins.scss";
 
 .checkout-page {
-  margin-top: 30px;
+  margin-top: 0px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  @include md {
+    margin-top: 30px;
+    flex-direction: row;
+  }
   .order-details {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @include md {
+      width: 70%;
+    }
     .address {
       border: 1px solid rgb(128, 128, 128, 0.3);
       padding: 20px;
@@ -44,20 +52,27 @@
       }
     }
     .payment {
-      height: 300px;
+      height: auto;
       border: 1px solid rgb(128, 128, 128, 0.3);
       padding: 20px;
       border-radius: 20px;
       display: flex;
       flex-direction: column;
       gap: 10px;
+      @include md {
+        height: 300px;
+      }
       .title {
         font-size: 0.8rem;
       }
       .methods {
         margin-top: 20px;
         display: flex;
+        flex-direction: column;
         gap: 20px;
+        @include md {
+          flex-direction: row;
+        }
         .method {
           cursor: pointer;
           display: flex;
@@ -70,13 +85,18 @@
     }
   }
   .place-order {
-    width: 25%;
+    margin-top: 20px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
     border: 1px solid rgb(128, 128, 128, 0.3);
     padding: 20px;
     border-radius: 20px;
+    @include md {
+      width: 25%;
+      margin-top: 0;
+    }
     .title {
       font-size: 0.8rem;
     }

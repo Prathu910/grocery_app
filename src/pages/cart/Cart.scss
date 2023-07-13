@@ -2,15 +2,23 @@
 
 .cart-page {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
+  @include md {
+    flex-direction: row;
+  }
   .items-in-cart {
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     border: 1px solid rgb(140, 140, 140, 0.2);
     border-radius: 20px;
     padding: 10px;
+    @include md {
+      width: 75%;
+    }
     .item-titles {
       display: flex;
       justify-content: space-between;
@@ -24,6 +32,10 @@
       }
       .item-info {
         display: flex;
+        flex-direction: column;
+        @include md {
+          flex-direction: row;
+        }
       }
       .first {
         max-width: 80px;
@@ -33,7 +45,10 @@
         background-color: transparent;
         border: 1px solid rgb(128, 128, 128, 0.5);
         span {
-          padding: 5px 10px;
+          padding: 5px 5px;
+          @include md {
+            padding: 5px 10px;
+          }
         }
       }
     }
