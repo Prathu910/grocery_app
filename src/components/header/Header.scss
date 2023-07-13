@@ -76,5 +76,28 @@
         }
       }
     }
+    .bars {
+      margin-left: 5px;
+      color: green;
+      @include md {
+        display: none;
+      }
+    }
+  }
+}
+
+.mob-menu {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    text-align: center;
+    li {
+      align-self: center;
+      width: 50%;
+      padding-bottom: 5px;
+      border-bottom: 1px solid rgb(77, 75, 75, 0.3);
+    }
   }
 }
